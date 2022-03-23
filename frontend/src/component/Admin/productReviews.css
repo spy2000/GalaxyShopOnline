@@ -45,6 +45,12 @@
   font-size: 1.6vmax;
   color: rgba(0, 0, 0, 0.623);
 }
+@media screen and (max-width: 990px) {
+  .productReviewsForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 2.3vmax cursive;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .productReviewsContainer {
@@ -53,7 +59,7 @@
   }
   .productReviewsForm > div > input {
     padding: 2.5vmax 5vmax;
-    font: 300 1.7vmax cursive;
+    font: 300 2.3vmax cursive;
   }
 
   .productReviewsForm > div > svg {

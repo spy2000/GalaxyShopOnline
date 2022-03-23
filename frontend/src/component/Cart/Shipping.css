@@ -9,7 +9,7 @@
 
 .shippingBox {
   background-color: white;
-  width: 25vw;
+  width: 30vw;
   height: 90vh;
   box-sizing: border-box;
   overflow: hidden;
@@ -18,7 +18,7 @@
 .shippingHeading {
   text-align: center;
   color: rgba(0, 0, 0, 0.664);
-  font: 400 1.3vmax "Roboto";
+  font: 400 2vmax "Roboto";
   padding: 1.3vmax;
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   width: 50%;
@@ -46,11 +46,12 @@
 .shippingForm > div > select {
   padding: 1vmax 4vmax;
   padding-right: 1vmax;
+  margin: 0.2vmax;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.267);
   border-radius: 4px;
-  font: 300 0.9vmax cursive;
+  font: 300 1.9vmax cursive;
   outline: none;
 }
 
@@ -95,7 +96,7 @@
 
   .shippingForm > div > input,
   .shippingForm > div > select {
-    padding: 5vw 10vw;
+    padding: 4vw 10vw;
     font: 300 4vw cursive;
   }
 
