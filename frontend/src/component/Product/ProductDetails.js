@@ -70,6 +70,9 @@ const ProductDetails = ({ match }) => {
   };
 
   const reviewSubmitHandler = () => {
+    if (rating < 2 && comment === "") {
+      return alert.error("Please add comment");
+    }
     const myForm = new FormData();
 
     myForm.set("rating", rating);

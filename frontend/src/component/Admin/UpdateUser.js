@@ -92,6 +92,7 @@ const UpdateUser = ({ history, match }) => {
                   placeholder="Name"
                   required
                   value={name}
+                  disabled
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -102,6 +103,7 @@ const UpdateUser = ({ history, match }) => {
                   placeholder="Email"
                   required
                   value={email}
+                  disabled
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>

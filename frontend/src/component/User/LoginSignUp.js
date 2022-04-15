@@ -42,7 +42,10 @@ const LoginSignUp = ({ history, location }) => {
 
   const registerSubmit = (e) => {
     e.preventDefault();
-
+    const validName = /^[a-zA-Z ]{2,30}$/;
+    if (validName.test(name) === false) {
+      return alert.error("Name can only contain letters");
+    }
     const myForm = new FormData();
 
     myForm.set("name", name);

@@ -27,6 +27,10 @@ const Shipping = ({ history }) => {
 
   const shippingSubmit = (e) => {
     e.preventDefault();
+    const validName = /^[a-zA-Z ]{2,30}$/;
+    if (validName.test(city) === false) {
+      return alert.error("City Name can only contain letters");
+    }
 
     if (phoneNo.length < 10 || phoneNo.length > 10) {
       alert.error("Phone Number should be 10 digits Long");

@@ -23,6 +23,10 @@ const UpdateProfile = ({ history }) => {
 
   const updateProfileSubmit = (e) => {
     e.preventDefault();
+    const validName = /^[a-zA-Z ]{2,30}$/;
+    if (validName.test(name) === false) {
+      return alert.error("Name can only contain letters");
+    }
 
     const myForm = new FormData();
 
@@ -52,7 +56,7 @@ const UpdateProfile = ({ history }) => {
       if (user.avatar.url !== "null") {
         setAvatarPreview(user.avatar.url);
       } else {
-        setAvatarPreview("/profile.png");
+        setAvatarPreview("/Profile.png");
       }
     }
 
@@ -107,6 +111,7 @@ const UpdateProfile = ({ history }) => {
                     required
                     name="email"
                     value={email}
+                    disabled
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>

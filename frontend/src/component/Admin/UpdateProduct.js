@@ -37,14 +37,18 @@ const UpdateProduct = ({ history, match }) => {
   const [oldImages, setOldImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
 
+  //category
   const categories = [
+    "Mobile",
+    "Earbuds",
+    "Smart Watch",
+    "Speaker",
+    "Computer",
     "Laptop",
-    "Footwear",
-    "Bottom",
-    "Tops",
-    "Attire",
+    "Mouse",
     "Camera",
-    "SmartPhones",
+    "Earphones",
+    "Pen Drive",
   ];
 
   const productId = match.params.id;
@@ -126,7 +130,7 @@ const UpdateProduct = ({ history, match }) => {
 
   return (
     <Fragment>
-      <MetaData title="Create Product" />
+      <MetaData title="Update Product" />
       <div className="dashboard">
         <SideBar />
         <div className="newProductContainer">
@@ -135,7 +139,7 @@ const UpdateProduct = ({ history, match }) => {
             encType="multipart/form-data"
             onSubmit={updateProductSubmitHandler}
           >
-            <h1>Create Product</h1>
+            <h1>Update Product</h1>
 
             <div>
               <SpellcheckIcon />
@@ -224,7 +228,7 @@ const UpdateProduct = ({ history, match }) => {
               type="submit"
               disabled={loading ? true : false}
             >
-              Create
+              Update
             </Button>
           </form>
         </div>
