@@ -1,12 +1,10 @@
 import React from "react";
 import "./aboutSection.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import MetaData from "../MetaData";
 const About = () => {
-  const visitInstagram = () => {
-    window.location = "https://www.instagram.com/error_spy/";
+  const visitInstagram = (link) => {
+    window.location = link;
   };
   return (
     <div className="aboutSection">
@@ -20,30 +18,46 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/dbfxhctfy/image/upload/v1645872354/Snapchat-1580226232_e0j52l.jpg"
+              src="https://res-console.cloudinary.com/dbfxhctfy/thumbnails/transform/v1/image/upload//v1650204398/V2hhdHNBcHBfSW1hZ2VfMjAyMi0wNC0xN19hdF83LjMxLjM0X1BNX2ZoZzNzZQ==/drilldown"
               alt="Founder"
             />
             <Typography>Sachin Yadav</Typography>
-            <Button onClick={visitInstagram} color="primary">
+            <Typography>Frontend Developer</Typography>
+            <Button
+              onClick={() =>
+                visitInstagram("https://www.instagram.com/error_spy/")
+              }
+              color="primary"
+            >
               Visit Instagram
             </Button>
             <span>
-              This is a sample wesbite made by Sachin Yadav. Only for the
-              purpose of final year project
+              This website Frontend part is done by me (Sachin Yadav). For this,
+              I am using React. Reactjs is a library of javascript to design UI
+              (user Interface) for Website.
             </span>
           </div>
-          <div className="aboutSectionContainer2">
-            <Typography component="h2">Our Brands</Typography>
-            <a
-              href="https://www.facebook.com/profile.php?id=100025470503879"
-              target="blank"
+          <div>
+            <Avatar
+              style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
+              src="https://res.cloudinary.com/dbfxhctfy/image/upload/v1650204694/WhatsApp_Image_2022-04-17_at_7.40.03_PM_pi2gg4.jpg"
+              alt="Founder"
+            />
+            <Typography>Ganesh Dhangekar</Typography>
+            <Typography>Backend Developer</Typography>
+            <Button
+              onClick={() =>
+                visitInstagram("https://www.instagram.com/ganesh_dhangekar07/")
+              }
+              color="primary"
             >
-              <FacebookIcon className="youtubeSvgIcon" />
-            </a>
-
-            <a href="https://www.instagram.com/error_spy/" target="blank">
-              <InstagramIcon className="instagramSvgIcon" />
-            </a>
+              Visit Instagram
+            </Button>
+            <span>
+              This website Backend part is done by me (Ganesh Dhangekar). For
+              this, I am using Nodejs. Nodejs is a library of javascript to
+              manage Backend of the Website.
+            </span>
           </div>
         </div>
       </div>
