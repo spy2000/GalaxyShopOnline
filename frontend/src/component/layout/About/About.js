@@ -18,7 +18,7 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res-console.cloudinary.com/dbfxhctfy/thumbnails/transform/v1/image/upload//v1650204398/V2hhdHNBcHBfSW1hZ2VfMjAyMi0wNC0xN19hdF83LjMxLjM0X1BNX2ZoZzNzZQ==/drilldown"
+              src="https://res.cloudinary.com/dbfxhctfy/image/upload/v1650204398/WhatsApp_Image_2022-04-17_at_7.31.34_PM_fhg3se.jpg"
               alt="Founder"
             />
             <Typography>Sachin Yadav</Typography>
@@ -34,7 +34,7 @@ const About = () => {
             <span>
               This website Frontend part is done by me (Sachin Yadav). For this,
               I am using React. Reactjs is a library of javascript to design UI
-              (user Interface) for Website.
+              (User Interface) for Website.
             </span>
           </div>
           <div>
